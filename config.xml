@@ -1,15 +1,27 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.things-to-do-in-rome.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget 
+id="com.things-to-do-in-rome.app" 
+version="1.0.0" 
+xmlns="http://www.w3.org/ns/widgets" 
+xmlns:gap="http://phonegap.com/ns/1.0"
+>
     
     <name>Your Guide to Rome</name>
+	
     <description>Great stories about all the sights in Rome</description>
     <author email="pdenarend@" href="http://www.things-to-do-in-rome.com">Paul den Arend</author>
+	<content src="http://www.things-to-do-in-rome.com" />
+    <access origin="*" subdomains="true" />
 
     <preference name="phonegap-version" value="3.7.0" />
     <feature name="http://api.phonegap.com/1.0/device" />
     
     <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
-    
+    <preference name="permissions" value="none"/>
+	
+	<gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
+	
+	<!--
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -24,6 +36,7 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="com.simplec.plugins.localnotification" />
 
+	-->
 	<icon src="icon.png" />
 	
 
@@ -82,6 +95,4 @@
     <gap:splash src="res/screen/ios/Default@2x.png" gap:platform="ios" width="680" height="960" />
     <gap:splash src="res/screen/ios/Deafult-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
-    <content src="http://www.things-to-do-in-rome.com" />
-    <access origin="*" subdomains="true" />
 </widget>
