@@ -13,8 +13,8 @@
     
     <preference name="orientation" value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
     <preference name="permissions" value="none"/>
-	<preference name="android-minSdkVersion" value="9" />
-	<preference name="android-maxSdkVersion" value="16" />
+	<!--<preference name="android-minSdkVersion" value="9" />
+	<preference name="android-maxSdkVersion" value="16" /> -->
 	
 	<gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
 	
@@ -34,7 +34,7 @@
     <gap:plugin name="com.simplec.plugins.localnotification" />
 
 	-->
-	<icon src="icon.png" />
+	<icon src="res/icons/android/drawable-hdpi/ic_launcher.png" />
 	
 
 	<!-- iPhone 6 / 6+ -->
